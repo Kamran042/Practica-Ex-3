@@ -15,7 +15,6 @@ const Section2 = () => {
             basket.push(targetOfData)
         }
         setBasket([...basket])
-        localStorage.setItem("basket",JSON.parse(basket))
     }
     return (
         <div className='section__two'>

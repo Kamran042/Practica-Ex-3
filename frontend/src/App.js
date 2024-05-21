@@ -10,9 +10,7 @@ function App() {
   const router = createBrowserRouter(ROUTES)
 
   const [data, setData] = useState([])
-  const [basket, setBasket] = useState(localStorage.getItem("basket")
-    ? JSON.parse(localStorage.getItem("basket"))
-    : [])
+  const [basket, setBasket] = useState( [])
   const [inpVal, setInpVal] = useState("");
   useEffect(() => {
     axios.get("http://localhost:8080/api/examenthree")

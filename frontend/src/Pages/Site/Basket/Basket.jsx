@@ -10,7 +10,6 @@ const Basket = () => {
     item.count++
     item.totalPrice += item.price
     setBasket([...basket])
-    localStorage.setItem("basket", JSON.parse(basket))
 
   }
   function decreaseProductOfBasket(item) {
@@ -25,7 +24,6 @@ const Basket = () => {
 
     }
     setBasket([...basket])
-    localStorage.setItem("basket", JSON.parse(basket))
 
   }
   return (
